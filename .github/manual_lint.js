@@ -20,7 +20,9 @@ async function main() {
             dataLines.filter(line => line.includes('勺子')).length +
             dataLines.filter(line => line.includes('炒勺')).length +
             dataLines.filter(line => line.includes('漏勺')).length +
-            dataLines.filter(line => line.includes('吧勺')).length) {
+            dataLines.filter(line => line.includes('吧勺')).length +
+            dataLines.filter(line => line.includes('把勺')).length +
+            dataLines.filter(line => line.includes('用勺')).length) {
             errors.push(`文件 ${filePath} 不符合仓库的规范！勺 不是一个精准的单位！`);
         }
         if (dataLines.filter(line => line.includes('适量')).length > 0) {
